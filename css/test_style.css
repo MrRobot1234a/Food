@@ -1,0 +1,39 @@
+* {
+    box-sizing: border-box;
+}
+
+body {
+    background-color: #343334;
+}
+
+.button {
+    display: block;
+    margin: 0 auto;
+    width: 200px;
+    height: 45px;
+    background-color: rgb(0, 0, 0);
+    color: white;
+    font-family: 'Akaya Kanadaka', cursive;
+    font-size: 30px;
+    border: none;
+    border-radius: 10px;
+    outline: none;
+}
+
+.wrapper {
+    position: relative;
+    width: 400px;
+    height: 400px;
+    background-color: pink;
+    margin: 0 auto;
+    margin-top: 20px;
+    border-radius: 10px;
+}
+
+.wrapper_block {
+    position: absolute;
+    width: 100px;
+    height: 100px;
+    background-color: blue;
+    border-radius: 10px;
+}
