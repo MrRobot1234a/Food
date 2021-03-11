@@ -1,9 +1,9 @@
 "use strict";
-
+/*
 import {five, six} from './main';
 import sayHello from './main';
 sayHello();
-
+*/
 window.addEventListener(`DOMContentLoaded`, () => {
 
     /*Геттеры и Сеттеры(get and set)*/
@@ -197,6 +197,19 @@ window.addEventListener(`DOMContentLoaded`, () => {
 
     /*ES6 Modules*/
 
+/*Ошибки. Как избежать “поломки” своего кода*/
+
+    /*
+    try {
+        console.log(`Hello Mr. Robot`);
+        console.log(a);
+    } catch(e) {
+        console.log(`Error`);
+        // throw e; 
+    } finally {
+        console.log(`Yes`);
+    }
+    */
     
 });
 

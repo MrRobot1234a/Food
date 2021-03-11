@@ -49,6 +49,7 @@ function modalWindow(modalTriggersSelector, modalWindowSelector, modalTimerId) {
     document.addEventListener(`keydown`, (e) => {
         if (e.code === `Escape` && modalWindow.classList.contains(`show`)) {
             closeModalWindow(modalWindowSelector);
+            window.removeEventListener(`scroll`, showModalByScroll);
         }
     });
 

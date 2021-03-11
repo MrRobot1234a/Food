@@ -67,9 +67,10 @@ function cards() {
     //         });
     //     });
 
-    axios.get(`http://localhost:3000/menu`)
+    getResource(`http://localhost:3000/menu`)
         .then(response => {
-            response.data.forEach(({img, altimg, title, descr, price}) => {
+            console.log(response);
+            response.forEach(({img, altimg, title, descr, price}) => {
                 new MenuCard(img, altimg, title, descr, `.menu .container`, price).render();
             });
         });

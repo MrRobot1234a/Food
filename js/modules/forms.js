@@ -23,15 +23,15 @@ function forms(formSelector, modalTimerId) {
         form.addEventListener(`submit`, (e) => {
             e.preventDefault();
 
-            const div = document.createElement(`img`);
-            div.src = message.loaded;
-            div.style.cssText = `
+            const img = document.createElement(`img`);
+            img.src = message.loaded;
+            img.style.cssText = `
                 display: block;
                 margin: 0 auto;
                 margin-top: 10px;
 
             `;
-            form.insertAdjacentElement(`afterend`, div);
+            form.insertAdjacentElement(`afterend`, img);
 
             const formData = new FormData(form);
 
@@ -48,7 +48,7 @@ function forms(formSelector, modalTimerId) {
                 .then(data => {
                     console.log(data.data);
                     showThanksModal(message.success);
-                    div.remove();
+                    img.remove();
                 })
                 .catch(() => {
                     showThanksModal(message.failure);

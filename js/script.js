@@ -1,5 +1,8 @@
 "use strict";
 
+import 'promise-polyfill/src/polyfill';
+import 'nodelist-foreach-polyfill';
+
 import calc from './modules/calc';
 import cards from './modules/cards';
 import forms from './modules/forms';
@@ -7,7 +10,7 @@ import modalWindow from './modules/modalWindow';
 import slider from './modules/slider';
 import tabs from './modules/tabs';
 import timer from './modules/timer';
-import {showModal} from './modules/modalWindow'
+import {showModal} from './modules/modalWindow';
 
 window.addEventListener(`DOMContentLoaded`, () => {
 

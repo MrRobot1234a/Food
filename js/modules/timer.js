@@ -27,7 +27,7 @@ function timer(timerSelector, dedline) {
     }
 
     function getZero2(num) {
-        if (num == 0 ) {
+        if (num === 0 ) {
             return `0${num}`;
         }
     }

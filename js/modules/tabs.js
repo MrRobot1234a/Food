@@ -21,7 +21,7 @@ function tabs(tabsSelector, tabsContentSelector, tabsParentSelector, classActiv)
     function showTabsContent(i = 0) {
         tabsContent[i].classList.add(`show`, `fade`);
         tabsContent[i].classList.remove(`hide`);
-        tabs[i].classList.add(`tabheader__item_active`);
+        tabs[i].classList.add(classActiv);
     }
     showTabsContent();
 
